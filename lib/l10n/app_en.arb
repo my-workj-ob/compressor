@@ -1,0 +1,385 @@
+{
+  "@@locale": "en",
+  "appName": "Clean PDF & File Compressor",
+  "@appName": {
+    "description": "The title of the application"
+  },
+  "appTagline": "Reduce file size. Keep quality. Offline. Fast. Secure.",
+  "@appTagline": {
+    "description": "Tagline displayed on the home screen"
+  },
+  "chooseLanguage": "Choose Language",
+  "@chooseLanguage": {
+    "description": "Header title on the language selection screen"
+  },
+  "selectLanguageSubtitle": "Select your preferred language to continue",
+  "@selectLanguageSubtitle": {
+    "description": "Subtitle on the language selection screen"
+  },
+  "languageEnglish": "English",
+  "@languageEnglish": {
+    "description": "English language name"
+  },
+  "languageEnglishSub": "Main language",
+  "@languageEnglishSub": {
+    "description": "English language subtitle"
+  },
+  "languageUzbek": "O‘zbek tili",
+  "@languageUzbek": {
+    "description": "Uzbek language name"
+  },
+  "languageUzbekSub": "O‘zbekcha",
+  "@languageUzbekSub": {
+    "description": "Uzbek language subtitle"
+  },
+  "languageRussian": "Русский",
+  "@languageRussian": {
+    "description": "Russian language name"
+  },
+  "languageRussianSub": "Русский язык",
+  "@languageRussianSub": {
+    "description": "Russian language subtitle"
+  },
+  "continueButton": "Continue",
+  "@continueButton": {
+    "description": "Continue button text"
+  },
+  "navHome": "Home",
+  "@navHome": {
+    "description": "Bottom navigation Home tab"
+  },
+  "navRecent": "Recent",
+  "@navRecent": {
+    "description": "Bottom navigation Recent tab"
+  },
+  "navFiles": "Files",
+  "@navFiles": {
+    "description": "Bottom navigation Files tab"
+  },
+  "navSettings": "Settings",
+  "@navSettings": {
+    "description": "Bottom navigation Settings tab"
+  },
+  "compressPdf": "Compress PDF",
+  "@compressPdf": {
+    "description": "Compress PDF action"
+  },
+  "compressImage": "Compress Image",
+  "@compressImage": {
+    "description": "Compress Image action"
+  },
+  "compressVideo": "Compress Video",
+  "@compressVideo": {
+    "description": "Compress Video action"
+  },
+  "compressFiles": "Compress Files",
+  "@compressFiles": {
+    "description": "Compress Files action"
+  },
+  "cleanFiles": "Clean Files",
+  "@cleanFiles": {
+    "description": "Clean files banner title"
+  },
+  "cleanFilesSubtitle": "Find and remove large files",
+  "@cleanFilesSubtitle": {
+    "description": "Clean files banner subtitle"
+  },
+  "selectFilePrompt": "Select a file to compress",
+  "@selectFilePrompt": {
+    "description": "Prompt to select a file"
+  },
+  "chooseFromDevice": "Choose from Device",
+  "@chooseFromDevice": {
+    "description": "Button to pick file from device"
+  },
+  "compressionLevel": "Compression level",
+  "@compressionLevel": {
+    "description": "Compression level title"
+  },
+  "levelLight": "Light",
+  "@levelLight": {
+    "description": "Light compression preset name"
+  },
+  "levelLightSub": "Best quality",
+  "@levelLightSub": {
+    "description": "Light compression preset subtitle"
+  },
+  "levelBalanced": "Balanced",
+  "@levelBalanced": {
+    "description": "Balanced compression preset name"
+  },
+  "levelBalancedSub": "Good quality",
+  "@levelBalancedSub": {
+    "description": "Balanced compression preset subtitle"
+  },
+  "levelStrong": "Strong",
+  "@levelStrong": {
+    "description": "Strong compression preset name"
+  },
+  "levelStrongSub": "Smallest size",
+  "@levelStrongSub": {
+    "description": "Strong compression preset subtitle"
+  },
+  "optimizeForWeb": "Optimize for web",
+  "@optimizeForWeb": {
+    "description": "Optimize for web toggle title"
+  },
+  "optimizeForWebSub": "Better for sharing online",
+  "@optimizeForWebSub": {
+    "description": "Optimize for web toggle subtitle"
+  },
+  "previewFirstPage": "Preview first page",
+  "@previewFirstPage": {
+    "description": "Preview first page title"
+  },
+  "startCompression": "Start Compression",
+  "@startCompression": {
+    "description": "Button to start compression"
+  },
+  "compressingTitle": "Compressing...",
+  "@compressingTitle": {
+    "description": "Compressing screen title"
+  },
+  "compressingSubtitle": "This may take a few moments. Please keep the app open.",
+  "@compressingSubtitle": {
+    "description": "Compressing screen subtitle"
+  },
+  "compressingFile": "Compressing file...",
+  "@compressingFile": {
+    "description": "Compressing file status message"
+  },
+  "originalSize": "Original size",
+  "@originalSize": {
+    "description": "Original file size label"
+  },
+  "estimatedSize": "Estimated size",
+  "@estimatedSize": {
+    "description": "Estimated file size label"
+  },
+  "newSize": "New size",
+  "@newSize": {
+    "description": "New file size label"
+  },
+  "stagePreparing": "Preparing file",
+  "@stagePreparing": {
+    "description": "Stage 1: Preparing file"
+  },
+  "stageAnalyzing": "Analyzing content",
+  "@stageAnalyzing": {
+    "description": "Stage 2: Analyzing content"
+  },
+  "stageCompressing": "Compressing...",
+  "@stageCompressing": {
+    "description": "Stage 3: Compressing"
+  },
+  "stageOptimizing": "Optimizing for quality",
+  "@stageOptimizing": {
+    "description": "Stage 4: Optimizing for quality"
+  },
+  "stageFinalizing": "Finalizing file",
+  "@stageFinalizing": {
+    "description": "Stage 5: Finalizing file"
+  },
+  "cancel": "Cancel",
+  "@cancel": {
+    "description": "Cancel button"
+  },
+  "compressionCompleted": "Compression completed!",
+  "@compressionCompleted": {
+    "description": "Result screen success title"
+  },
+  "compressionSuccessSubtitle": "Your file has been successfully compressed.",
+  "@compressionSuccessSubtitle": {
+    "description": "Result screen success subtitle"
+  },
+  "compressionFailed": "Compression failed",
+  "@compressionFailed": {
+    "description": "Result screen failure title"
+  },
+  "compressionFailedSubtitle": "An error occurred while compressing the file. Please try again.",
+  "@compressionFailedSubtitle": {
+    "description": "Result screen failure subtitle"
+  },
+  "percentSmaller": "{percent}% smaller",
+  "@percentSmaller": {
+    "description": "Badge showing compression reduction percentage",
+    "placeholders": {
+      "percent": {
+        "type": "String",
+        "example": "74"
+      }
+    }
+  },
+  "noReduction": "File is already optimal",
+  "@noReduction": {
+    "description": "Label when file cannot be reduced further"
+  },
+  "openFile": "Open File",
+  "@openFile": {
+    "description": "Open file button"
+  },
+  "share": "Share",
+  "@share": {
+    "description": "Share button"
+  },
+  "saveToDevice": "Save to Device",
+  "@saveToDevice": {
+    "description": "Save to device button"
+  },
+  "delete": "Delete",
+  "@delete": {
+    "description": "Delete button"
+  },
+  "rename": "Rename",
+  "@rename": {
+    "description": "Rename button"
+  },
+  "renameDialogTitle": "Rename File",
+  "@renameDialogTitle": {
+    "description": "Rename dialog title"
+  },
+  "enterNewName": "Enter new file name",
+  "@enterNewName": {
+    "description": "Rename dialog input placeholder"
+  },
+  "save": "Save",
+  "@save": {
+    "description": "Save button"
+  },
+  "myFiles": "My Files",
+  "@myFiles": {
+    "description": "My files screen title"
+  },
+  "searchFiles": "Search files...",
+  "@searchFiles": {
+    "description": "Search input placeholder"
+  },
+  "filterAll": "All",
+  "@filterAll": {
+    "description": "Filter pill All"
+  },
+  "filterPdf": "PDF",
+  "@filterPdf": {
+    "description": "Filter pill PDF"
+  },
+  "filterImages": "Images",
+  "@filterImages": {
+    "description": "Filter pill Images"
+  },
+  "filterVideos": "Videos",
+  "@filterVideos": {
+    "description": "Filter pill Videos"
+  },
+  "filterDocuments": "Documents",
+  "@filterDocuments": {
+    "description": "Filter pill Documents"
+  },
+  "dateToday": "Today",
+  "@dateToday": {
+    "description": "Date section Today"
+  },
+  "dateYesterday": "Yesterday",
+  "@dateYesterday": {
+    "description": "Date section Yesterday"
+  },
+  "noFilesFound": "No files found",
+  "@noFilesFound": {
+    "description": "Empty state title"
+  },
+  "noFilesFoundSubtitle": "Compressed files will appear here",
+  "@noFilesFoundSubtitle": {
+    "description": "Empty state subtitle"
+  },
+  "deleteConfirmationTitle": "Delete file?",
+  "@deleteConfirmationTitle": {
+    "description": "Delete dialog title"
+  },
+  "deleteConfirmationMessage": "Are you sure you want to delete this file? This action cannot be undone.",
+  "@deleteConfirmationMessage": {
+    "description": "Delete dialog message"
+  },
+  "settings": "Settings",
+  "@settings": {
+    "description": "Settings screen title"
+  },
+  "language": "Language",
+  "@language": {
+    "description": "Language settings tile title"
+  },
+  "privacyPolicy": "Privacy & Security",
+  "@privacyPolicy": {
+    "description": "Privacy settings title"
+  },
+  "offlineBadge": "100% Offline & Private",
+  "@offlineBadge": {
+    "description": "Offline badge title"
+  },
+  "offlineDescription": "All compression runs locally on your device. Your documents and photos never leave your phone.",
+  "@offlineDescription": {
+    "description": "Offline description in settings"
+  },
+  "clearCache": "Clear Temporary Cache",
+  "@clearCache": {
+    "description": "Clear cache button"
+  },
+  "cacheCleared": "Cache cleared successfully",
+  "@cacheCleared": {
+    "description": "Snackbar message when cache is cleared"
+  },
+  "appVersion": "App Version",
+  "@appVersion": {
+    "description": "App version label"
+  },
+  "featureComingSoon": "This feature will be available in the upcoming update.",
+  "@featureComingSoon": {
+    "description": "Snackbar message for upcoming features"
+  },
+  "pagesCount": "{count, plural, =1{1 page} other{{count} pages}}",
+  "@pagesCount": {
+    "description": "Number of pages in PDF",
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "example": "120"
+      }
+    }
+  },
+  "errorFileNotFound": "Selected file could not be found or opened.",
+  "@errorFileNotFound": {
+    "description": "Error when file is missing"
+  },
+  "errorFileTooLarge": "File is too large to process.",
+  "@errorFileTooLarge": {
+    "description": "Error when file is too large"
+  },
+  "fileSavedToast": "File saved to device successfully.",
+  "@fileSavedToast": {
+    "description": "Toast when file is saved"
+  },
+  "fileDeletedToast": "File deleted.",
+  "@fileDeletedToast": {
+    "description": "Toast when file is deleted"
+  },
+  "saveAsZip": "Save as ZIP archive",
+  "@saveAsZip": {
+    "description": "Option to package compressed files into a ZIP"
+  },
+  "saveAsZipSub": "Compress and bundle files into a .zip archive",
+  "@saveAsZipSub": {
+    "description": "Subtitle for ZIP package option"
+  },
+  "addMoreFiles": "Add more files",
+  "@addMoreFiles": {
+    "description": "Button to add more files to compression queue"
+  },
+  "filesCount": "{count, plural, =1{1 file} other{{count} files}}",
+  "@filesCount": {
+    "description": "Plural counter for selected files",
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "example": "5"
+      }
+    }
+  }
+}
