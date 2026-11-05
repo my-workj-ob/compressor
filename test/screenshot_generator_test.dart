@@ -71,13 +71,6 @@ void main() {
       ),
     );
 
-    final tempDir = Directory.systemTemp.createTempSync('ss_test_');
-    final samplePdf = File('${tempDir.path}/Annual_Financial_Report_2026.pdf');
-    samplePdf.writeAsBytesSync(List.filled(100, 0));
-
-    final sampleImg = File('${tempDir.path}/Camera_Ultra_HD_Photo.jpg');
-    sampleImg.writeAsBytesSync(List.filled(100, 0));
-
     Future<void> captureScreen(Widget screenWidget, String filename) async {
       final key = GlobalKey();
       await tester.pumpWidget(
@@ -107,9 +100,9 @@ void main() {
           ),
         ),
       );
-      await tester.pump();
-      await tester.pump(const Duration(milliseconds: 300));
-      await tester.pump(const Duration(milliseconds: 300));
+      // Wait for any async initState/futures to settle
+      await tester.pump(const Duration(milliseconds: 100));
+      await tester.pump(const Duration(milliseconds: 200));
 
       final boundary = key.currentContext!.findRenderObject() as RenderRepaintBoundary;
       final image = await boundary.toImage(pixelRatio: 2.0);
@@ -118,7 +111,7 @@ void main() {
 
       final file = File('/home/user/Desktop/compressor/screenshots/$filename');
       file.writeAsBytesSync(pngBytes);
-      print('Saved screenshot: ${file.path} (${image.width}x${image.height})');
+      print('SUCCESS: ${file.path} (${image.width}x${image.height})');
     }
 
     // 1. Home Dashboard
@@ -131,10 +124,9 @@ void main() {
       'screenshot_1_home.png',
     );
 
-    // 2. PDF Compression with Preset Selection
+    // 2. Preset Selection Screen
     await captureScreen(
       PdfCompressionScreen(
-        initialFile: samplePdf,
         fileType: 'pdf',
         historyController: historyController,
         languageController: languageController,
@@ -142,10 +134,9 @@ void main() {
       'screenshot_2_pdf_compression.png',
     );
 
-    // 3. Image Compression Options
+    // 3. Image Compression Screen
     await captureScreen(
       PdfCompressionScreen(
-        initialFile: sampleImg,
         fileType: 'image',
         historyController: historyController,
         languageController: languageController,
@@ -153,13 +144,13 @@ void main() {
       'screenshot_3_image_compression.png',
     );
 
-    // 4. Compression Result & Before/After Comparison
+    // 4. Compression Result Screen
     await captureScreen(
       CompressionResultScreen(
         result: CompressionResult(
           isSuccess: true,
-          originalPath: samplePdf.path,
-          compressedPath: samplePdf.path,
+          originalPath: '/dummy/report.pdf',
+          compressedPath: '/dummy/report.pdf',
           fileName: 'Annual_Financial_Report_2026.pdf',
           originalSizeBytes: 14800000,
           compressedSizeBytes: 2960000,
@@ -173,7 +164,7 @@ void main() {
       'screenshot_4_result_comparison.png',
     );
 
-    // 5. My Files Screen (Library & History)
+    // 5. My Files Screen
     await captureScreen(
       MainScaffold(
         languageController: languageController,
@@ -183,7 +174,7 @@ void main() {
       'screenshot_5_my_files.png',
     );
 
-    // 6. Settings Screen (Language & 100% Offline Privacy)
+    // 6. Settings Screen
     await captureScreen(
       MainScaffold(
         languageController: languageController,
@@ -192,9 +183,5 @@ void main() {
       ),
       'screenshot_6_settings_privacy.png',
     );
-
-    if (tempDir.existsSync()) {
-      tempDir.deleteSync(recursive: true);
-    }
   });
 }
